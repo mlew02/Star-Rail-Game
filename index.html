@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Rail Game</title>
     <link rel="stylesheet" href="styles/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body id="opener" class="opener">
      <div id="title" class="title">
         <h1>Pom Poms Elements</h1>
+        <audio id="my_audio" src="/cards/space.mp3" autoplay="autoplay" loop="loop"></audio>
      </div>
 
      
@@ -19,11 +30,9 @@
             Instructions:
             <br>
             <br>
-            Match all 7 elemets before the time runs out!!
+            Match all 7 elemets before you run out of attempts!!
         </p>
         
-        
-     
         
      </div>
      <div id="begin-button" class="begin-button">
@@ -31,9 +40,15 @@
      </div>
     
 
+<script>
+   let vid = document.getElementById("my_audio");
+   vid.volume = 0.1;
+   window.onload = function () {
+    document.getElementById("my_audio");
+    audio.play();
+}
+</script>
    
-    
-   <script src="/scripts/game.js"></script>
 
 
 </body>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Star rail</title>
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,
+400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900
+;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100
+..900;1,100..900&family=Paytone+One&family=Tauri&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="main-back">
+    <div class="game-screen">
+        <div class="game-start-title">
+            <h1>Star Match</h1>
+        </div>
+        <audio id="my_audio" src="/cards/maintheme.mp3" autoplay="autoplay" loop="loop" ></audio>
+        <div class="turns">
+            <span>Turns Left:</span>
+            <span id="turn-out">0</span>
+        </div>
+    </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <p>Game Over. Would you like to play again?</p>
+          <button id="play-again-btn">Play Again</button>
+          <button id="exit-btn">Exit</button>
+        </div>
+      </div>
+
+      <div id="win" class="win">
+        <div class="winner">
+          <p>Winner!!!. Would you like to play again?</p>
+          <button id="play-again-btns"class="play-again-btns">Play Again</button>
+          <button id="exit-btns"class="exit-btns">Exit</button>
+        </div>
+      </div>
+
+      <div id="thank" class="thank">
+        <div class="thanks">
+          <p>Thanks for playing!!</p>
+        </div>
+      </div>
+    <div class="game-board isHidden">
+        <div class="card1 card">
+            <div class="face-down front" >
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+        </div>
+        <div class="card2 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card3 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card4 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card5 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card6 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card7 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+        </div>
+        <div class="card8 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card9 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card10 card front">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+
+
+        </div>
+        <div class="card11 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card12 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card13 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+        <div class="card14 card">
+            <div class="face-down front">
+                <img src="cards/card.svg" alt="face down" class="card-back">
+                <img src="" alt="card-front" class="card-front">
+            </div>
+
+
+        </div>
+    </div>
+    <script src="scripts/game.js"></script>
+</body>
+
+</html>
+
