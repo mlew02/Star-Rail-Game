@@ -1,0 +1,270 @@
+/*opener background*/
+
+.opener {
+    background-image: url('../cards/train.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.title h1 {
+    font-size: 70px;
+    color: white;
+    font-family: "Noto Sans",sans-serif;
+}
+
+/* .title h1{
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 400px;
+        color: white;
+    
+    } */
+
+.instructions {
+    position: fixed;
+    /* margin: auto; */
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    background-color: #333366;
+    
+
+}
+
+.instructions p {
+    font-size: 25px;
+    display: flex;
+    color: #CCCC66;
+    font-family: "Merriweather";
+    max-width: 500px;
+    text-align: center;
+    text-align: justify;
+    line-height: 35px;
+    padding: 10px 1rem 1rem 1rem;
+
+
+}
+
+.begin-button {
+    position: fixed;
+    margin: auto;
+    top: 65%;
+    right: 47%;
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    border: 3px solid white;
+    background-color: #333366;
+     font-family: "Merriweather";
+
+}
+
+.begin-button a {
+    color: white;
+    text-decoration: none;
+    font-family: "Merriweather";
+}
+
+.button-play:hover {
+    color: #CCCC66;
+
+    background-color: #333366;
+    box-shadow: 0 0 30px #333366;
+}
+
+/* game */
+.main-back {
+    background-image: url("../cards/main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.game-start-title h1 {
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+    font-family: "Merriweather";
+
+}
+
+.game-board {
+    max-width: 1220px;
+    position: relative;
+    /* width: 1300px;
+    height: 850px; */
+    /* margin: 0 auto 200px auto; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 10px;
+    margin: 0 auto;
+    padding-top: 4em;
+
+
+
+
+
+
+
+    /* border-radius: 10px; */
+}
+
+
+.card img {
+    /* height: 250px; */
+    width: 9rem;
+
+}
+
+.front {
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.turns {
+    font-size: 2rem;
+    color: #fff;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 19%;
+    font-family: "Merriweather";
+
+
+}
+
+
+.card-front {
+    display: none;
+}
+
+.modal p {
+    color: #CCCC66;
+    font-size: 2rem;
+    font-family: "Merriweather";
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #333366;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+    font-family: "Merriweather";
+}
+.win p {
+    color: #CCCC66;
+    font-size: 2rem;
+    font-family: "Merriweather";
+}
+
+.win {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.winner {
+    background-color: #333366;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    font-family: "Merriweather";
+}
+
+/* Style the buttons */
+
+button, #play-again-buttons {
+  
+    font-family: "Merriweather";
+}
+button, #play-again-buttons {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: #CCCC66;
+    color: #333366;
+    font-family: "Merriweather";
+}
+button, #exit-btns{
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: #CCCC66;
+    color: #333366;
+    font-family: "Merriweather";
+
+}
+button, #exit-btn{
+    font-family: "Merriweather";
+
+}
+.thank {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.thanks {
+    background-color: #333366;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    font-family: "Merriweather";
+}
+.thank p {
+    color: #CCCC66;
+    font-size: 2rem;
+    font-family: "Merriweather";
+}
